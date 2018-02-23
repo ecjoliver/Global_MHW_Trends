@@ -1,0 +1,61 @@
+--------------------
+NOAA OI SST analysis
+--------------------
+
+mhw_census_TheilSen_modes.py -- Main script for the calculation of the satellite-era census data
+
+mhw_census_plots.py -- Script for plotting, including manuscript figures
+
+mhw_census_TheilSen_combine.py -- Combine AR1 simulations from two different computations one starting at lon 0 and going -> and one starting at 360 and going <-
+
+mhw_census_compareENSO.py -- Rough estimate of impact of ENSO on global MHW means and time series
+
+sst_meanVarSkew.py -- Script for calculating SST mean, variance and skewness from NOAA OI SST
+
+sst_meanVarSkew_plots.py -- For plotting SST mean, variance and skewness
+
+sst_meanVarSkew_combine.py -- Combine statistics from two different computations
+
+gen_NOAAOISST_iceMean.m -- Generate mask based on ice data
+
+compare_OLS_global.py -- Comparison of Ordinary Least Squares and Theil-Sen trends calculations (globally)
+
+compare_OLS_pointLocs.py -- Comparison of Ordinary Least Squares and Theil-Sen trends calculations (at specific point locations)
+
+compare_p90p95p98.py -- Comparison of NOAA OI SST global mean results using different MHW thresholds (90th, 95th, 98th percentiles)
+
+mhw_upliftInMean_TheilSen.py -- Calculate relationship between trend in MHW metrics and linear trend in SST (Theil-Sen trends)
+
+-------------------------
+LONG TIME SERIES ANALYSIS
+-------------------------
+
+mhw_longTimeseries_GLM.py -- Main script for fitting and plotting proxies to long time series data
+
+mhw_longTimeseries_GLM_correlateGlobal.py -- Correlate point locations against global MHW proxies
+
+mhw_longTimeseries_climPeriodSens.py -- Test sensitivity of long time series analysis to different climatology periods
+
+---------------
+HADSST ANALYSIS
+---------------
+
+mhw_proxies_GLM.py -- Generate MHW proxies from long monthly SST data, can remove effect of climate modes.
+
+mhw_proxies_GLM_compareDataSets.py -- Script for plotting, including manuscript figures
+
+mhw_proxies_GLM_compareDataSets_compareModes.py -- Estimate of impact of climate modes on global MHW means and time series
+
+mhw_proxies_GLM_compareDataSets_timeSeries.py -- Script for plotting noModes time series manuscript figure
+
+mhw_proxies_GLM_compareDataSets_errors.py -- Script for plotting model vs. obs errors manuscript figure
+
+mhw_proxies_GLM_saveNOAAData.py -- Generate NOAA OI SST data on HadSST grid, for use in errorBootstraps code (above)
+
+-----
+OTHER
+-----
+
+trendSimAR1.py, pyc -- Functions for the fitting and simulation of AR1 process
+
+modes_AMO_PDO_plot.py -- Make map & time series for PDO and AMO modes
